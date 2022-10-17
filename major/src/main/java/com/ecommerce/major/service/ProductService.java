@@ -16,9 +16,10 @@ public class ProductService {
        {
            return productRepository.findAll();
        }
-       public void addproduct(Products products)
+       public Products addproduct(Products products)
        {
               productRepository.save(products);
+              return products;
        }
        public void deleteproduct(int id){
               //System.out.println("neet");

@@ -44,9 +44,9 @@ public class LoginController {
              roles.add(roleRepository.findById(2).get());
              user1.setRole(roles);
              userRepository.save(user1);
-             System.out.println("cow");
+             //System.out.println("cow");
              httpRequest.login(user1.getEmail(),user1.getPassword());
-             System.out.println("wow");
+             //System.out.println("wow");
              return "redirect:/home";
         }
 }

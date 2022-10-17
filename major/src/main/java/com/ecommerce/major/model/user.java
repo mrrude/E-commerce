@@ -43,6 +43,12 @@ public class user {
          this.password=user1.getPassword();
          this.role=user1.getRole();
     }
+    public user(String firstname,String email,List<Role>role)
+    {
+        this.firstname=firstname;
+        this.email=email;
+        this.role=role;
+    }
     public user()
     {
 
